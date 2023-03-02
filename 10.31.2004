@@ -1,0 +1,604 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>A Quiet Space: Early Start</title>
+    <script type="text/javascript">
+      (function() {
+        (function() {
+          function b(g) {
+            this.t = {};
+            this.tick = function(h, m, f) {
+              var n = void 0 != f ? f : (new Date).getTime();
+              this.t[h] = [n, m];
+              if (void 0 == f) try {
+                window.console.timeStamp("CSI/" + h)
+              } catch (q) {}
+            };
+            this.getStartTickTime = function() {
+              return this.t.start[0]
+            };
+            this.tick("start", null, g)
+          }
+          var a;
+          if (window.performance) var e = (a = window.performance.timing) && a.responseStart;
+          var p = 0 < e ? new b(e) : new b;
+          window.jstiming = {
+            Timer: b,
+            load: p
+          };
+          if (a) {
+            var c = a.navigationStart;
+            0 < c && e >= c && (window.jstiming.srt = e - c)
+          }
+          if (a) {
+            var d = window.jstiming.load;
+            0 < c && e >= c && (d.tick("_wtsrt", void 0, c), d.tick("wtsrt_", "_wtsrt", e), d.tick("tbsd_", "wtsrt_"))
+          }
+          try {
+            a = null, window.chrome && window.chrome.csi && (a = Math.floor(window.chrome.csi().pageT), d && 0 < c && (d.tick("_tbnd", void 0, window.chrome.csi().startE), d.tick("tbnd_", "_tbnd", c))), null == a && window.gtbExternal && (a = window.gtbExternal.pageT()), null == a && window.external && (a = window.external.pageT, d && 0 < c && (d.tick("_tbnd", void 0, window.external.startE), d.tick("tbnd_", "_tbnd", c))), a && (window.jstiming.pt = a)
+          } catch (g) {}
+        })();
+        window.tickAboveFold = function(b) {
+          var a = 0;
+          if (b.offsetParent) {
+            do a += b.offsetTop; while (b = b.offsetParent)
+          }
+          b = a;
+          750 >= b && window.jstiming.load.tick("aft")
+        };
+        var k = !1;
+
+        function l() {
+          k || (k = !0, window.jstiming.load.tick("firstScrollTime"))
+        }
+        window.addEventListener ? window.addEventListener("scroll", l, !1) : window.attachEvent("onscroll", l);
+      })();
+    </script>
+    <script type="text/javascript">
+      function a() {
+        var b = window.location.href,
+          c = b.split("?");
+        switch (c.length) {
+          case 1:
+            return b + "?m=1";
+          case 2:
+            return 0 <= c[1].search("(^|&)m=") ? null : b + "&m=1";
+          default:
+            return null
+        }
+      }
+      var d = navigator.userAgent;
+      if (-1 != d.indexOf("Mobile") && -1 != d.indexOf("WebKit") && -1 == d.indexOf("iPad") || -1 != d.indexOf("Opera Mini") || -1 != d.indexOf("IEMobile")) {
+        var e = a();
+        e && window.location.replace(e)
+      };
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="generator" content="Blogger" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="https://www.blogger.com/favicon.ico" />
+    <link rel="alternate" type="application/atom+xml" title="A Quiet Space - Atom" href="http://dionaeahouse.blogspot.com/feeds/posts/default" />
+    <link rel="alternate" type="application/rss+xml" title="A Quiet Space - RSS" href="http://dionaeahouse.blogspot.com/feeds/posts/default?alt=rss" />
+    <link rel="service.post" type="application/atom+xml" title="A Quiet Space - Atom" href="https://www.blogger.com/feeds/8895440/posts/default" />
+    <link rel="alternate" type="application/atom+xml" title="A Quiet Space - Atom" href="http://dionaeahouse.blogspot.com/feeds/109924831542334634/comments/default" />
+    <link rel="stylesheet" type="text/css" href="https://www.blogger.com/static/v1/v-css/1601750677-blog_controls.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.blogger.com/dyn-css/authorization.css?targetBlogID=8895440&zx=d11849a6-d176-410b-a2a9-f45744d84ee9" />
+    <style type="text/css">
+      /*
+-----------------------------------------------
+Blogger Template Style
+Name:     Minima Black
+Designer: Douglas Bowman
+URL:      www.stopdesign.com
+Date:     26 Feb 2004
+----------------------------------------------- */
+      body {
+        background: #000;
+        margin: 0;
+        padding: 40px 20px;
+        font: x-small "Trebuchet MS", Trebuchet, Verdana, Sans-Serif;
+        text-align: center;
+        color: #ccc;
+        font-size
+        /* */
+        :
+          /**/
+          small;
+        font-size:
+          /**/
+          small;
+      }
+
+      a:link {
+        color: #9ad;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: #a7a;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #ad9;
+        text-decoration: underline;
+      }
+
+      a img {
+        border-width: 0;
+      }
+
+      /* Header
+----------------------------------------------- */
+      #header {
+        width: 660px;
+        margin: 0 auto 10px;
+        border: 1px solid #333;
+      }
+
+      #blog-title {
+        margin: 5px 5px 0;
+        padding: 20px 20px .25em;
+        border: 1px solid #222;
+        border-width: 1px 1px 0;
+        font-size: 200%;
+        line-height: 1.2em;
+        color: #ccc;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+      }
+
+      #blog-title a {
+        color: #ccc;
+        text-decoration: none;
+      }
+
+      #blog-title a:hover {
+        color: #ad9;
+      }
+
+      #description {
+        margin: 0 5px 5px;
+        padding: 0 20px 20px;
+        border: 1px solid #222;
+        border-width: 0 1px 1px;
+        font: 78%/1.4em "Trebuchet MS", Trebuchet, Arial, Verdana, Sans-serif;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+        color: #777;
+      }
+
+      /* Content
+----------------------------------------------- */
+      #content {
+        width: 660px;
+        margin: 0 auto;
+        padding: 0;
+        text-align: left;
+      }
+
+      #main {
+        width: 410px;
+        float: left;
+      }
+
+      #sidebar {
+        width: 220px;
+        float: right;
+      }
+
+      /* Headings
+----------------------------------------------- */
+      h2 {
+        margin: 1.5em 0 .75em;
+        font: bold 78%/1.4em "Trebuchet MS", Trebuchet, Arial, Verdana, Sans-serif;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+        color: #777;
+      }
+
+      /* Posts
+----------------------------------------------- */
+      .date-header {
+        margin: 1.5em 0 .5em;
+      }
+
+      .post {
+        margin: .5em 0 1.5em;
+        border-bottom: 1px dotted #444;
+        padding-bottom: 1.5em;
+      }
+
+      .post-title {
+        margin: .25em 0 0;
+        padding: 0 0 4px;
+        font-size: 140%;
+        line-height: 1.4em;
+        color: #ad9;
+      }
+
+      .post-title a {
+        text-decoration: none;
+        color: #ad9;
+      }
+
+      .post-title a:hover {
+        color: #fff;
+      }
+
+      .post div {
+        margin: 0 0 .75em;
+        line-height: 1.6em;
+      }
+
+      p.post-footer {
+        margin: -.25em 0 0;
+        color: #333;
+      }
+
+      .post-footer em,
+      .comment-link {
+        font: 78%/1.4em "Trebuchet MS", Trebuchet, Arial, Verdana, Sans-serif;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+      }
+
+      .post-footer em {
+        font-style: normal;
+        color: #777;
+        margin-right: .6em;
+      }
+
+      .comment-link {
+        margin-left: .6em;
+      }
+
+      .post img {
+        padding: 4px;
+        border: 1px solid #222;
+      }
+
+      .post blockquote {
+        margin: 1em 20px;
+      }
+
+      .post blockquote p {
+        margin: .75em 0;
+      }
+
+      /* Comments
+----------------------------------------------- */
+      #comments h4 {
+        margin: 1em 0;
+        font: bold 78%/1.6em "Trebuchet MS", Trebuchet, Arial, Verdana, Sans-serif;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+        color: #999;
+      }
+
+      #comments h4 strong {
+        font-size: 130%;
+      }
+
+      #comments-block {
+        margin: 1em 0 1.5em;
+        line-height: 1.6em;
+      }
+
+      #comments-block dt {
+        margin: .5em 0;
+      }
+
+      #comments-block dd {
+        margin: .25em 0 0;
+      }
+
+      #comments-block dd.comment-timestamp {
+        margin: -.25em 0 2em;
+        font: 78%/1.4em "Trebuchet MS", Trebuchet, Arial, Verdana, Sans-serif;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+      }
+
+      #comments-block dd p {
+        margin: 0 0 .75em;
+      }
+
+      .deleted-comment {
+        font-style: italic;
+        color: gray;
+      }
+
+      /* Sidebar Content
+----------------------------------------------- */
+      #sidebar ul {
+        margin: 0 0 1.5em;
+        padding: 0 0 1.5em;
+        border-bottom: 1px dotted #444;
+        list-style: none;
+      }
+
+      #sidebar li {
+        margin: 0;
+        padding: 0 0 .25em 15px;
+        text-indent: -15px;
+        line-height: 1.5em;
+      }
+
+      #sidebar p {
+        color: #999;
+        line-height: 1.5em;
+      }
+
+      /* Profile
+----------------------------------------------- */
+      #profile-container {
+        margin: 0 0 1.5em;
+        border-bottom: 1px dotted #444;
+        padding-bottom: 1.5em;
+      }
+
+      .profile-datablock {
+        margin: .5em 0 .5em;
+      }
+
+      .profile-img {
+        display: inline;
+      }
+
+      .profile-img img {
+        float: left;
+        padding: 4px;
+        border: 1px solid #222;
+        margin: 0 8px 3px 0;
+      }
+
+      .profile-data {
+        margin: 0;
+        font: bold 78%/1.6em "Trebuchet MS", Trebuchet, Arial, Verdana, Sans-serif;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+      }
+
+      .profile-data strong {
+        display: none;
+      }
+
+      .profile-textblock {
+        margin: 0 0 .5em;
+      }
+
+      .profile-link {
+        margin: 0;
+        font: 78%/1.4em "Trebuchet MS", Trebuchet, Arial, Verdana, Sans-serif;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+      }
+
+      /* Footer
+----------------------------------------------- */
+      #footer {
+        width: 660px;
+        clear: both;
+        margin: 0 auto;
+      }
+
+      #footer hr {
+        display: none;
+      }
+
+      #footer p {
+        margin: 0;
+        padding-top: 15px;
+        font: 78%/1.6em "Trebuchet MS", Trebuchet, Verdana, Sans-serif;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+      }
+    </style>
+    <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109' />
+    <meta name='google-adsense-platform-domain' content='blogspot.com' />
+    <!-- -->
+    <style type="text/css">
+      @import url(https://www.blogger.com/static/v1/v-css/navbar/3334278262-classic.css);
+
+      div.b-mobile {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function setAttributeOnload(object, attribute, val) {
+        if (window.addEventListener) {
+          window.addEventListener('load', function() {
+            object[attribute] = val;
+          }, false);
+        } else {
+          window.attachEvent('onload', function() {
+            object[attribute] = val;
+          });
+        }
+      }
+    </script>
+    <div id="navbar-iframe-container"></div>
+    <script type="text/javascript" src="https://apis.google.com/js/platform.js"></script>
+    <script type="text/javascript">
+      gapi.load("gapi.iframes:gapi.iframes.style.bubble", function() {
+        if (gapi.iframes && gapi.iframes.getContext) {
+          gapi.iframes.getContext().openChild({
+            url: 'https://www.blogger.com/navbar.g?targetBlogID\x3d8895440\x26blogName\x3dA+Quiet+Space\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dBLUE\x26layoutType\x3dCLASSIC\x26searchRoot\x3dhttps://dionaeahouse.blogspot.com/search\x26blogLocale\x3den_US\x26v\x3d2\x26homepageUrl\x3dhttp://dionaeahouse.blogspot.com/\x26vt\x3d3288603648233058678',
+            where: document.getElementById("navbar-iframe-container"),
+            id: "navbar-iframe"
+          });
+        }
+      });
+    </script>
+    <div id="header">
+      <h1 id="blog-title">
+        <a href="http://dionaeahouse.blogspot.com/"> A Quiet Space </a>
+      </h1>
+      <p id="description"></p>
+    </div>
+    <!-- Begin #content -->
+    <div id="content">
+      <!-- Begin #main -->
+      <div id="main">
+        <div id="main2">
+          <h2 class="date-header">Sunday, October 31, 2004</h2>
+          <!-- Begin .post -->
+          <div class="post">
+            <a name="109924831542334634"></a>
+            <h3 class="post-title"> Early Start </h3>
+            <div class="post-body">
+              <div> It's not yet noon, but I haven't been able to sleep since last night, and waiting seems pointless. The sun is up, let's go let's go. Cam is on his way over now. <br />
+                <br />I went to Home Depot early this morning and bought some supplies for the trip. I already had a few essentials here, mostly electronics. We're taking: <br />
+                <ul>
+                  <li>two high-powered flashlights</li>
+                  <li>a Canon digital Elph camera</li>
+                  <li>a Sony mini-camcorder</li>
+                  <li>noseplugs</li>
+                  <li>Swiss army knives with built-in scissors</li>
+                  <li>a laser pointer</li>
+                </ul> Now and then I glance over at the gear, and chuckle. It's like we're going on some hiking trip. Except, Cam is bringing his handgun. That scares me more than anything right now. I don't want anyone to get shot today, even Sweatsuit Man, if he's home. If we need to involve police, the firearm will make things look worse. And lastly, it's not like he's going to unload a clip into the drywall. <br />
+                <br />We may have two more coming with us, two friends of Cam's who're along for the ride. I don't know either of them, but I guess the more the merrier. An outside perspective will do me good. <br />
+                <br />Connie won't be back from her mother's until about 4pm. I should be home long before then. The main objectives of this trip: 1) Confront Sweatsuit Man, find out who he is, and 2) document the house, including address info. <br />
+                <br />
+                <span style="font-style: italic;">Update:</span> Cam's friends can't make it. It's just the two of us. Well, that makes it easier to keep an eye on each other. <br />
+                <br />He's on his way up. Jen, I'm guessing you had to recharge your cell overnight or something. Call me. <br />
+                <br />Here we go. <br />
+              </div>
+            </div>
+            <p class="post-footer">
+              <em>posted by Eric at <a href="http://dionaeahouse.blogspot.com/2004/10/early-start.html" title="permanent link">10:19 AM</a>
+              </em>
+              <span class="item-control blog-admin pid-1466862788">
+                <a style="border:none;" href="https://www.blogger.com/post-edit.g?blogID=8895440&postID=109924831542334634&from=pencil" title="Edit Post">
+                  <img class="icon-action" alt="" src="https://resources.blogblog.com/img/icon18_edit_allbkg.gif" height="18" width="18">
+                </a>
+              </span>
+            </p>
+          </div>
+          <!-- End .post -->
+          <!-- Begin #comments -->
+          <div id="comments">
+            <a name="comments"></a>
+            <h4>248 Comments:</h4>
+            <dl id="comments-block">
+              <dt class="comment-poster" id="c109924935133695940">
+                <a name="c109924935133695940"></a>
+                <span style="line-height:16px" class="comment-icon blogger-comment-icon">
+                  <img src="https://resources.blogblog.com/img/b16-rounded.gif" alt="Blogger" style="display:inline;" />
+                </span>&nbsp; <a href="https://www.blogger.com/profile/07450904771844096977" rel="nofollow">JennyLevin</a> said...
+              </dt>
+              <dd class="comment-body">
+                <p>Eric wait I just now got all your msgs! <br />
+                  <br />Dont go just call the police or something! You told me the same thing when I wanted to go to Phoenix remember??? <br />
+                  <br />GAH now your not answering your phone!!!
+                </p>
+              </dd>
+              <dd class="comment-timestamp">
+                <a href="#109924935133695940" title="comment permalink">11:02 AM</a>
+                <span class="item-control blog-admin pid-888281583">
+                  <a style="border:none;" href="https://www.blogger.com/delete-comment.g?blogID=8895440&postID=109924935133695940" title="Delete Comment">
+                    <span class="delete-comment-icon">&nbsp;</span>
+                  </a>
+                </span>
+              </dd>
+              <dt class="comment-poster" id="c109925451991505982">
+                <a name="c109925451991505982"></a>
+                <span style="line-height:16px" class="comment-icon blogger-comment-icon">
+                  <img src="https://resources.blogblog.com/img/b16-rounded.gif" alt="Blogger" style="display:inline;" />
+                </span>&nbsp; <a href="https://www.blogger.com/profile/07450904771844096977" rel="nofollow">JennyLevin</a> said...
+              </dt>
+              <dd class="comment-body">
+                <p>Please.... PLEASE answer your phone... <br />This waiting is killing me...... </p>
+              </dd>
+              <dd class="comment-timestamp">
+                <a href="#109925451991505982" title="comment permalink">12:28 PM</a>
+                <span class="item-control blog-admin pid-888281583">
+                  <a style="border:none;" href="https://www.blogger.com/delete-comment.g?blogID=8895440&postID=109925451991505982" title="Delete Comment">
+                    <span class="delete-comment-icon">&nbsp;</span>
+                  </a>
+                </span>
+              </dd>
+              <dt class="comment-poster" id="c109926074390685827">
+                <a name="c109926074390685827"></a>
+                <span style="line-height:16px" class="comment-icon blogger-comment-icon">
+                  <img src="https://resources.blogblog.com/img/b16-rounded.gif" alt="Blogger" style="display:inline;" />
+                </span>&nbsp; <a href="https://www.blogger.com/profile/10629842388277302923" rel="nofollow">ohdanigirl</a> said...
+              </dt>
+              <dd class="comment-body">
+                <p>jenny levin where are you <br />
+                  <br />the boys are all inside now <br />
+                  <br />come and find us <br />
+                  <br />the door is open
+                </p>
+              </dd>
+              <dd class="comment-timestamp">
+                <a href="#109926074390685827" title="comment permalink">2:12 PM</a>
+                <span class="item-control blog-admin pid-263073314">
+                  <a style="border:none;" href="https://www.blogger.com/delete-comment.g?blogID=8895440&postID=109926074390685827" title="Delete Comment">
+                    <span class="delete-comment-icon">&nbsp;</span>
+                  </a>
+                </span>
+              </dd>
+              <dt class="comment-poster" id="c109926538316494473">
+                <a name="c109926538316494473"></a>
+                <span style="line-height:16px" class="comment-icon blogger-comment-icon">
+                  <img src="https://resources.blogblog.com/img/b16-rounded.gif" alt="Blogger" style="display:inline;" />
+                </span>&nbsp; <a href="https://www.blogger.com/profile/15648041405122128917" rel="nofollow">Eric</a> said...
+              </dt>
+              <dd class="comment-body">
+                <p>
+                  <span class="deleted-comment">This comment has been removed by a blog administrator.</span>
+                </p>
+              </dd>
+              <dd class="comment-timestamp">
+                <a href="#109926538316494473" title="comment permalink">3:29 PM</a>
+                <span class="item-control blog-admin pid-1466862788">
+                  <a style="border:none;" href="https://www.blogger.com/delete-comment.g?blogID=8895440&postID=109926538316494473" title="Delete Comment">
+                    <span class="delete-comment-icon">&nbsp;</span>
+                  </a>
+                </span>
+              </dd>
+              <dt class="comment-poster" id="c109930195541363894">
+                <a name="c109930195541363894"></a>
+                <span style="line-height:16px" class="comment-icon blogger-comment-icon">
+                  <img src="https://resources.blogblog.com/img/b16-rounded.gif" alt="Blogger" style="display:inline;" />
+                </span>&nbsp; <a href="https://www.blogger.com/profile/16770646633548104758" rel="nofollow">Mark Hondrie</a> said...
+              </dt>
+              <dd class="comment-body">
+                <p>
+                  <span class="deleted-comment">This comment has been removed by a blog administrator.</span>
+                </p>
+              </dd>
+              <dd class="comment-timestamp">
+                <a href="#109930195541363894" title="comment permalink">1:39 AM</a>
+                <span class="item-control blog-admin ">
+                  <a style="border:none;" href="https://www.blogger.com/delete-comment.g?blogID=8895440&postID=109930195541363894" title="Delete Comment">
+                    <span class="delete-comment-icon">&nbsp;</span>
+                  </a>
+                </span>
+              </dd>
+              <dt class="comment-poster" id="c109930213980233805">
+                <a name="c109930213980233805"></a>
+                <span style="line-height:16px" class="comment-icon blogger-comment-icon">
+                  <img src="https://resources.blogblog.com/img/b16-rounded.gif" alt="Blogger" style="display:inline;" />
+                </span>&nbsp; <a href="https://www.blogger.com/profile/16770646633548104758" rel="nofollow">Mark Hondrie</a> said...
+              </dt>
+              <dd class="comment-body">
+                <p>Those who know, we consume. <br />
+                  <br />To those who doubt, we appeal. <br />
+                  <br />From those who believe, we hide. <br />
+                  <br />Those who know, we are. <br />
+                  <br />Those who know, we consume. <br />
+                  <br />There is no escape.
+                </p>
+              </dd>
+              <dd class="comment-timestamp">
+                <a href="#109930213980233805" title="comment permalink">1:42 AM</a>
+                <span class="item-control blog-admin pid-826469900">
+                  <a style="border:none;" href="https://www.blogger.com/delete-comment.g?blogID=8895440&postID=109930213980233805" title="Delete Comment">
+                    <span class="delete-comment-icon">&nbsp;</span>
+                  </a>
+                </span>
+              </dd>
